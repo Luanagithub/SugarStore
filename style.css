@@ -1,0 +1,134 @@
+*{
+    border-image: url(Fundo.jpg);
+}
+
+#header > div:hover .menu {
+    display: flex;
+    transform: rotateX(0deg); /* Alteramos o rotateX para zero */
+}
+
+  /* Estilo de hover para os itens de menu dentro do submenu */
+#header .menu .submenu-item:hover {
+    background-color: #b1e3f3;
+    text-decoration: none;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #D4EFF8;
+    border-radius: 20px;
+    flex-direction: column;
+    height: fit-content;
+    position: absolute;
+    transform: rotateX(-90deg);
+    transform-origin: top center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.submenu-item{
+    font-family:"Arial";
+    font-size: 15pt;
+    margin: 10px;
+    position: relative;
+    top: 1px;
+
+}
+.submenu-item:hover{
+    text-decoration: underline;
+}
+#header, #corpo1, #corpo2 , #footer{
+    display: flex;
+    margin: 3px;
+}
+body{
+    flex-wrap: wrap;
+    background-image: url(Fundos/ListrasAzulRosaBranco.jpg);
+    background-size: 100%;
+}
+#header{
+    flex: 1 1 100vw;
+    justify-content: space-around;
+    font-size: 30pt;
+    font-family: 'Dancing Script', cursive;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#corpo1{
+    background-color: beige;
+    flex: 1 1 100vw;
+    font-size: 20pt;
+}
+@font-face {
+    font-family: "Adelia";
+    src: url(transfonter.org-20230605-173639/adelia.woff);
+}
+.Fonte{
+    font-family:"Adelia";
+}
+
+#corpo2{
+    background-color: beige;
+    flex: 1 1 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: start;
+    padding: 20px;
+    overflow: auto;
+    text-align: center;
+}
+#corpo2 img{
+    width: 200px;
+    height: 200px;
+    margin-left: 0px;  
+    border: 1px solid #b1e3f3; 
+}
+#corpo2 img:hover{
+    opacity: 0.9;
+    transition-timing-function: ease;
+    transition-duration: 1 s;
+    border: 5px solid #b1e3f3;
+    cursor: pointer;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+.Bloco{
+    flex: 1 1 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    border: 5px solid rgb(255, 255, 255);
+    font-family: 'Kalam', cursive;
+    font-size: 20pt;
+    padding: 20px;
+    text-align: center;
+}
+button,input{
+    height: fit-content;
+    font-family: inherit;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 20pt;
+    cursor: pointer;
+}
+button:hover,input:hover{
+    font-weight: bold;
+}
+
+#footer{
+    background-color: beige;
+    flex: 1 1 100vw;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
